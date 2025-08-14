@@ -8,7 +8,7 @@ const { item } = defineProps({
   },
 });
 
-const removeCartItem = inject('removeCartItem');
+const removeCartItem = inject('removeCartItem') as (name: string) => void;
 
 function removeItem() {
   removeCartItem(item.name);
