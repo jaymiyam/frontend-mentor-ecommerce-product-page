@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-orange-500: hsl(26, 100%, 55%);
+  --clr-orange-200: hsl(25, 100%, 94%);
+  --clr-grey-100: hsl(223, 64%, 98%);
+  --clr-grey-300: hsl(220, 14%, 75%);
+  --clr-grey-500: hsl(219, 9%, 45%);
+  --clr-grey-700: hsl(220, 13%, 13%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+
+  --ff-main: 'Kumbh Sans', sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fs-body: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  width: 100dvw;
+  min-height: 100dvh;
+  font-family: var(--ff-main);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+/* header */
+header,
+main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  position: relative;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+}
+
+/* utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
