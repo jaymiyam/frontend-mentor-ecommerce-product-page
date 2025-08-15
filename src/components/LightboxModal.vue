@@ -57,7 +57,7 @@ function goToImage(index: number) {
               />
             </svg>
           </button>
-          <img :src="`/images/${images[currentIndex]}`" alt="" />
+          <img :src="`images/${images[currentIndex]}`" alt="" />
           <button @click="loadNextImage" class="image-nav-btn next">
             <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -76,7 +76,7 @@ function goToImage(index: number) {
             class="modal-thumbnail-image"
             v-for="(image, index) in thumbnails"
           >
-            <img :src="`/images/${image}`" :alt="image" />
+            <img :src="`images/${image}`" :alt="image" />
           </button>
         </div>
       </div>

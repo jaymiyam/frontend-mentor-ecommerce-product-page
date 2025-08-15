@@ -37,7 +37,7 @@ const emit = defineEmits(['openModal']);
     <div class="main-image-wrapper">
       <img
         class="main-image"
-        :src="`/images/${images[currentIndex]}`"
+        :src="`images/${images[currentIndex]}`"
         :alt="images[0]"
       />
       <button @click="emit('openModal')" class="open-modal-btn">
@@ -74,7 +74,7 @@ const emit = defineEmits(['openModal']);
         class="thumbnail-image"
         v-for="(image, index) in thumbnails"
       >
-        <img :src="`/images/${image}`" :alt="image" />
+        <img :src="`images/${image}`" :alt="image" />
       </button>
     </div>
   </div>
